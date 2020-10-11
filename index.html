@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Isabelle Winter_Nazlisöz</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+
+<body>
+    <main>
+        <section id="intro">
+            <article id="intro_container">
+                <img id="me" src="./assets/img/me.jpg" alt="profilbild">
+                <div id="intro_overview">
+                    <h1>Hi, mein Name ist Isabelle.</h1>
+                    <p>Ich bin <strong>Webentwicklerin,</strong> Ingenieurin und Personalentwicklerin.</p>
+                    <div id="intro_buttons">
+                        <a class="intro_btn" href="#contact">KONTAKT</a>
+                        <a class="intro_btn" href="#about-me">ÜBER MICH</a>
+                    </div>
+                </div>
+
+            </article>
+        </section>
+        <section id="about-me">
+            <h1>ÜBER MICH</h1>
+            <article id="about_text">
+                <!-- <h1>WEBENTWICKLERIN</h1> -->
+                <ul>
+                    <li> <a class="arrow" href="https://www.super-code.de/" target="_blank"> <strong>>>></strong> </a><strong>2020 - Bootcamp bei </strong><a class="animation" href="https://www.super-code.de/" target="_blank">super-code</a> </li>
+                    <li> <a class="arrow" href="#skills"><strong>>>> </strong></a> <strong>zu meinen </strong><a class="animation" href="#skills">Kompetenzen</a></li>
+                    <li> <a class="arrow" href="#gallery"> <strong>>>> </strong> </a> <strong>zu meinen </strong><a class="animation" href="#gallery">Projekten</a></li>
+                </ul>
+            </article>
+        </section>
+        <section id="skills">
+            <h1>MEINE SKILLS</h1>
+            <div id="form_container">
+                <form action="">
+                    <div>
+                        <label for="">
+                            HTML/ CSS
+                        </label>
+                        <input type="range" id="html_css" name="html_css" min="0" max="10" value=9>
+                    </div>
+                    <div>
+                        <label for="">
+                            javascript/ React.js
+                        </label>
+                        <input type="range" id="js" name="js" min="0" max="10" value=8>
+                    </div>
+                    <div>
+                        <label for="">
+                            Git/ Github
+                        </label>
+                        <input type="range" id="git" name="git" min="0" max="10" value=7.5>
+                    </div>
+                    <div>
+                        <label for="">
+                            Node.js/ Express.js/ MongoDB
+                        </label>
+                        <input type="range" id="node" name="node" min="0" max="10" value=7>
+                    </div>
+
+                </form>
+            </div>
+
+
+        </section>
+
+        <section id="gallery">
+            <div>
+                <h1>PROJEKTE</h1>
+            </div>
+
+            <ul class="gallery_images">
+                <li><a href="https://iwinter74.github.io/Project_Basic-Agency/" target="_blank"><img
+                            src="./assets/img/basicAgency.png" alt="">Github</a></li>
+                <li><a href="https://sheltered-tor-80630.herokuapp.com/" target="_blank"><img
+                            src="./assets/img/blog.png" alt=""></a></li>
+                <li><a href="https://lit-basin-37168.herokuapp.com/" target="_blank"><img
+                            src="./assets/img/movieMagic.png" alt=""></a></li>
+                <li><a href="https://vast-mountain-67867.herokuapp.com/" target="_blank"><img
+                            src="./assets/img/onlineShop.png" alt=""></a></li>
+                <li><a href="https://sleepy-stream-56698.herokuapp.com/" target="_blank"><img
+                            src="./assets/img/spotify.png" alt=""></a></li>
+                <li><a href="https://festive-curie-1cdd36.netlify.app/" target="_blank"><img src="./assets/img/Beers.png" alt=""></a></li>
+            </ul>
+        </section>
+        <section id="contact">
+            <h1>KONTAKT</h1>
+            <article id="contact_details">
+                <div>
+                    <div id="me_small">
+                        <img src="./assets/img/me_small.jpg" alt="">
+                    </div>
+                    <h2>Isabelle Winter-Nazlisöz</h2>
+                    <p>
+                        <span>Webentwicklerin</span>
+                        <span id="sprecherin">Ingenieurin</span>
+                        <span>Personalentwicklerin</span>
+                    </p>
+                    <nav id="social">
+                        <ul>
+                            <li><a href="https://www.linkedin.com/in/isabelle-wn/" target="_blank">
+                                    <ion-icon name="logo-linkedin"></ion-icon>
+                                </a></li>
+                            <li><a href="https://www.xing.com/profile/Isabelle_WinterNazlisoez/cv" target="_blank">
+                                    <ion-icon name="logo-xing"></ion-icon>
+                                </a></li>
+                            <li><a href="https://github.com/iwinter74" target="_blank">
+                                    <ion-icon name="logo-github"></ion-icon>
+                                </a></li>
+                            <li><a href="mailto:isabelle.winternazlisoz@gmail.com" target="_blank">
+                                    <ion-icon name="mail-outline"></ion-icon>
+                                </a></li>
+                        </ul>
+                    </nav>
+                </div>
+
+            </article>
+        </section>
+    </main>
+    <footer>
+        <nav id="menu">
+            <ul>
+                <li><a href="#intro">START</a></li>
+                <li><a href="#about-me">ÜBER MICH</a></li>
+                <li><a href="#skills">MEINE SKILLS</a></li>
+                <li><a href="#gallery">PROJEKTE</a></li>
+                <li><a href="#contact">KONTAKT</a></li>
+            </ul>
+        </nav>
+    </footer>
+    <script src="https://unpkg.com/ionicons@5.1.2/dist/ionicons.js"></script>
+    <script>
+        document.getElementById('html_css').disabled = true
+        document.getElementById('js').disabled = true
+        document.getElementById('git').disabled = true
+        document.getElementById('node').disabled = true
+    </script>
+</body>
+
+</html>

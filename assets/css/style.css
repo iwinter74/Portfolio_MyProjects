@@ -1,0 +1,425 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+html {
+    scroll-behavior: smooth;
+}
+body{
+    display: flex;
+    align-items: center;
+    height: 100vh
+}
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10em auto;
+    padding: 0 10em;
+    height: 60vh;  
+  
+}
+section {
+    width: 80rem;
+    box-shadow: 0 0 50px #999999
+}
+#intro, #skills {
+    background-image: linear-gradient(45deg, #726193 20%, #e37b7c 60%, #ffe4b4);
+
+}
+#intro_overview h1 {
+    font-size: 2em;
+    padding-bottom: 0.5em;
+}
+#intro_overview p {
+    padding-bottom: 1em;
+}
+#me {
+    height: 80vh
+}
+#intro_container {
+    display: flex;
+    align-items: center;
+
+}
+#intro_overview {
+    color: #f1f1f1;
+    padding-left: 3em;
+}
+#intro_buttons {
+    display: flex;
+  
+}
+.intro_btn {
+    color: #726193;
+    background:  #f1f1f1;
+    padding: 0.5em 3em;
+    border: 1px solid #f1f1f1;
+    margin-right: 1em;
+    display: inline-block;
+    text-decoration: none;
+    box-shadow: 0 5px 20px #999999
+}
+.intro_btn:hover {
+    box-shadow: none;
+}
+#about-me {
+    background: url("../img/office-1.jpg") center/cover no-repeat;
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    color: #f1f1f1;
+
+}
+#about-me>h1, #skills h1 {
+    color: #f1f1f1;
+    width: 20%;
+    padding: 2em 1em;
+    text-decoration: underline #ffe4b4 ;
+    background-image: linear-gradient(45deg,rgba(114, 97, 147, 0.35) 25%,
+    rgba(227, 123, 124, 0.35) 50%,rgba(255, 228, 180, 0.35));
+}
+#about-me h1 {
+    margin-bottom: 0.5em;
+}
+#about-me li {
+    margin-bottom: 0.5em;
+}
+#about_text {
+    padding: 10em;
+    background-image: linear-gradient(45deg,rgba(114, 97, 147, 0.35) 25%,
+    rgba(227, 123, 124, 0.35) 50%,rgba(255, 228, 180, 0.35));
+}
+#about-me h1 {
+    font-size: 2em;
+}
+@keyframes my_animation {
+    0%   {color:#353865; ;}
+    25%  {color: #e37b7c;}
+    50%  {color: #353865; }
+    100% {color: #e37b7c;}
+  }
+  .animation {
+      animation-name: my_animation;
+      animation-duration: 8s;
+      animation-timing-function: ease-in-out;
+      animation-iteration-count: infinite;
+      text-decoration: none;
+      color: #353865;
+      transition: all 2s ease-in-out;
+      font-size: 2em;
+      font-weight: 900;
+  }
+
+#about-me a:hover {
+    color:  #ffe4b4;
+    animation: none;
+}
+
+strong, #header {
+    font-size: 2em;
+}
+#about_text li {
+    list-style: none;
+}
+
+#gallery {
+    width: 106rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #f1f1f1;
+    background: #726193;
+}
+.gallery_images {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+}
+#gallery img {
+    height: 105%;
+    width: 100%;
+    object-fit: cover;
+    -webkit-filter: brightness(0.5);
+    transition: all 1s ease-out;
+}
+#gallery img:hover {
+    -webkit-filter: brightness(1);
+    transform: scale(1.2);
+}
+#gallery h1 {
+    color: #f1f1f1;
+    padding: 2em 4em;
+    text-decoration: underline #ffe4b4 ;
+    background-image: linear-gradient(45deg,rgba(114, 97, 147, 0.175) 25%,
+    rgba(227, 123, 124, 0.175) 50%, rgba(255, 228, 180, 0.175));
+ 
+}
+#gallery li {
+    height: 40vh;
+    width: 27.5rem;
+    list-style: none;
+    overflow: hidden;
+}
+#contact {
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    color: #f1f1f1;
+    background-image: linear-gradient(45deg, #726193 20%, #e37b7c 60%, #ffe4b4);
+}
+#contact h1 {
+    /* padding: 2em 10em 2em 4em; */
+    width: 20%;
+    padding: 2em 1em;
+    color: #f1f1f1;
+    text-decoration: underline #ffe4b4 ;
+    background-image: linear-gradient(45deg,rgba(114, 97, 147, 0.175) 25%,
+    rgba(227, 123, 124, 0.175) 50%, rgba(255, 228, 180, 0.175));
+    width: 20%
+}
+#contact_details {
+    padding-left: 15em;
+    text-align: center;
+    padding-bottom: 1em;
+}
+#sprecherin {
+    border-left: 2px solid #f1f1f1;
+    border-right: 2px solid #f1f1f1 ;
+    display: inline-block;
+    padding-right: 0.5em;
+    padding-left: 0.5em;
+}
+#contact nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+nav li {
+    list-style: none;
+}
+nav a {
+    text-decoration: none;
+}
+#contact img {
+    height: 200px;
+    width: 200px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 7px solid #ffe4b4;
+}
+#contact h2 {
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+}
+footer {
+    position: fixed;
+    bottom: 5%;
+}
+#menu {
+    width: 100vw
+}
+#menu ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#menu a {
+    color: #353865;
+    transition: all 0.6s ease-out;
+}
+#menu a:hover {
+    color: #e37b7c
+}
+#menu li {
+    padding-right: 2em
+}
+#social ul {
+    display: flex;
+    align-items: center;
+}
+#social a{
+    font-size: 3em;
+    color: #353865;
+    padding: 0.2em;
+    transition: all 0.8s ease-out;
+}
+#social a:hover {
+    color:  #ffe4b4
+}
+#social {
+    margin-top: 2em
+}
+#skills {
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    color: #f1f1f1;
+}
+#skills input {
+    width: 200%;
+    appearance: none;
+    border-radius: 10px;
+    background: linear-gradient(45deg, #726193 20%, #e37b7c 60%, #ffe4b4)
+}
+#skills input::-webkit-slider-thumb {
+    appearance: none;
+    width: 25px;
+    height: 25px;
+    border-radius: 100%;
+    background: #726193;
+    cursor: pointer;
+  }
+
+#skills label {
+    display: block;
+    padding-left: 1em;
+    padding-bottom: 0.5em
+}
+#skills form div {
+    padding: 2em
+}
+#form_container {
+    padding-left: 15em
+}
+.arrow {
+    color: white;
+    text-decoration: none;
+}
+
+
+@media only screen and (max-width: 768px) and (min-width: 425px) {
+    main {
+        padding: 0 5em;
+        height: 40vh;  
+}
+    section {
+        width: 60rem
+}
+    #form_container, #contact_details {
+        padding-left: 5em
+}
+    footer {
+        top: 25%
+}
+    #about-me a, strong {
+        font-size: 1.5em;
+}
+.intro_btn {
+    padding: 0.3em 2em;
+    box-shadow: 0 3px 10px #999999
+}
+}
+
+@media only screen and (max-width: 425px) {
+    main, body, #intro_container, #about-me, #skills, #gallery, .gallery_images, #contact, #menu ul {
+        display: unset
+    }
+    footer {
+        position: unset
+    }
+
+    section, #about_text, #menu ul {
+        width: 100%
+    }
+
+    #intro_container {
+        padding-top: 2em;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    #me {
+        display: inline-block;
+        height: 50vh
+    }
+    #intro_overview h1 {
+        font-size: 1em
+    }
+    #intro_overview p {
+       padding-right: 3em;
+       font-size: 1em
+    }
+    #intro_overview h1 {
+        padding-top: 1em;
+    }
+    .intro_btn {
+        padding: 0.3em;
+        box-shadow: 0 2px 8px #999999
+    }
+    #intro_buttons {
+        padding-bottom: 2em;
+    }
+    .gallery_images img {
+        width: 50vw
+    }
+    #about-me>h1, #skills h1, #contact h1 {
+        width: 100%;
+        text-align: center;
+        margin-bottom: 0;
+        background-image: linear-gradient(45deg, #726193 20%, #e37b7c 60%, #ffe4b4);
+    }
+    #about_text {
+        background: url("../img/office-1.jpg") center/cover no-repeat;
+    }
+    #about_text h1, #about_text ul {
+        background-image: linear-gradient(45deg,rgba(114, 97, 147, 0.35) 25%,
+        rgba(227, 123, 124, 0.35) 50%,rgba(255, 228, 180, 0.35));
+     
+    }
+    #header, #about_text_responsive h1 {
+        font-size: 1.5em
+    }
+    strong {
+        font-size: 1em
+    }
+    #about-me a{
+        font-size: 1.5em
+    }
+    #about-me h1 {
+        font-size: 1.5em;
+    }
+    #form_container {
+        padding-left: 2em;
+        background-image: linear-gradient(45deg, #726193 20%, #e37b7c 60%, #ffe4b4);
+    }
+    #skills input {
+        width: 100%;
+    }
+    #gallery h1, #contact h1 {
+        background-image: linear-gradient(45deg, #726193 20%, #e37b7c 60%, #ffe4b4);
+    }
+    #gallery li {
+        width: 100%
+    }
+    #contact_details {
+        padding-left: 1em;
+        padding-top: 1.5em;
+        background-image: linear-gradient(45deg, #726193 20%, #e37b7c 60%, #ffe4b4);
+    }
+    #social a {
+        font-size: 2em
+ }
+    #contact_details h2 {
+        font-size: 1.5em
+ }
+    #menu a {
+        font-size: 0.7em
+    }
+    #menu ul {
+        text-align: center;
+    }
+    #menu {
+        margin-bottom: 1em;
+    }
+    #about_text {
+        padding: 2em
+    }
+
+
+}
